@@ -43,6 +43,28 @@ Nav a:hover {
   Text-decoration: underline; 
 } 
 
+ /* Main content */ 
+Main { 
+  Max-width: 1000px; 
+  Margin: 30px auto; 
+  Padding: 20px; 
+  Background: white; 
+  Border-radius: 10px; 
+  Box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
  
 
  
