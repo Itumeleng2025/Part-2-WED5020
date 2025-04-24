@@ -53,6 +53,26 @@ Main {
   Box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
 } 
 
+ /* Footer */ 
+Footer { 
+  Text-align: center; 
+  Padding: 20px; 
+  Background-color: #1e90ff;
+  Color: white; 
+  Margin-top: 30px; 
+  Border-top: 1px solid #ccc; 
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
  
 
  
