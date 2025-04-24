@@ -118,6 +118,35 @@ Input, textarea, select {
   Display: block; 
 } 
 
+ /* Testimonials */ 
+.testimonial { 
+  Background-color: #eaf6ff; 
+  Border-left: 4px solid #1e90ff; 
+  Padding: 20px; 
+  Margin: 20px 0; 
+  Border-radius: 8px; 
+  Display: flex; 
+  Align-items: center;
+  Gap: 15px; 
+} 
+.testimonial img { 
+  Width: 60px; 
+  Height: 60px; 
+  Border-radius: 50%; 
+} 
+.testimonial p { 
+  Font-style: italic; 
+} 
+/* Contact Icons */ 
+.contact-icons { 
+  Display: flex; 
+  Gap: 20px;
+  Flex-wrap: wrap; 
+  Margin-top: 20px; 
+} 
+
+ 
+
  
 
  
