@@ -155,7 +155,62 @@ Input, textarea, select {
 } 
 
  
+/* Payment */ 
+.payment-method { 
+  Display: flex;
+  Justify-content: space-around; 
+  Flex-wrap: wrap; 
+  Margin-top: 20px;
+} 
+.payment-method div { 
+  Padding: 20px; 
+  Border: 1px solid #ddd; 
+  Border-radius: 10px; 
+  Text-align: center; 
+  Background-color: #fff; 
+  Box-shadow: 0 2px 8px rgba(0,0,0,0.05); 
+  Width: 150px; 
+  Margin-bottom: 20px; 
+} 
+.payment-method div:hover { 
+  Border-color: #1e90ff;
+}
+/* Responsive */ 
+@media (max-width: 768px) { 
+  Nav { 
+    Flex-direction: column; 
+  } 
+  Main { 
+    Margin: 15px; 
+    Padding: 15px; 
+  } 
+} 
 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
  
 
  
