@@ -107,6 +107,27 @@ Input, textarea, select {
   Margin: 5px 0; 
 } 
 
+ /* Sign Up Form */ 
+.signup-form { 
+  Max-width: 600px; 
+  Margin: 0 auto; 
+} 
+.signup-form label { 
+  Font-weight: bold; 
+  Margin-bottom: 5px; 
+  Display: block; 
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
  
 
  
