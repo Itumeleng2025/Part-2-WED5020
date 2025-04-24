@@ -90,6 +90,29 @@ Input, textarea, select {
   Border: 1px solid #ccc; 
 } 
 
+ /* Job Listing */ 
+.job-listing { 
+  Background: #ffffff; 
+  Border-left: 5px solid #1e90ff; 
+  Margin-bottom: 20px; 
+  Padding: 15px; 
+  Border-radius: 8px; 
+  Box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
+}
+.job-listing h3 { 
+  Margin-bottom: 8px; 
+  Color: #1e90ff; 
+} 
+.job-listing p {
+  Margin: 5px 0; 
+} 
+
+ 
+
+ 
+
+ 
+
  
 
  
