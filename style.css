@@ -27,7 +27,31 @@ Header {
 
  
 
+/* Navigation */
+Nav { 
+Display: flex; 
+Justify-content: center; 
+ Gap: 20px; 
+ Margin-top: 10px; 
+} 
+Nav a { 
+  Color: white; 
+  Text-decoration: none; 
+  Font-weight: bold; 
+} 
+Nav a:hover { 
+  Text-decoration: underline; 
+} 
+
  
+
+ 
+
+ 
+
+ 
+
+  
 
  
 
