@@ -144,7 +144,29 @@ Input, textarea, select {
   Flex-wrap: wrap; 
   Margin-top: 20px; 
 } 
+.contact-icons div { 
+  Background: #ffffff; 
+  Border: 1px solid #ccc; 
+  Padding: 15px;
+  Border-radius: 8px; 
+  Flex: 1; 
+  Min-width: 120px; 
+  Text-align: center; 
+} 
 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
  
 
  
