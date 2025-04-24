@@ -9,20 +9,35 @@
 Body { 
 
   Font-family: ‘Segoe UI’, Tahoma, Geneva, Verdana, sans-serif; 
- 
   Font-size: 16px; 
-
   Line-height: 1.6;
-
   Color: #333;
-
   Background-color: #f9f9f9; 
-
   Padding: 20px; 
-
 } 
 /* Header */ 
+Header { 
 
+  Background-color: #1e90ff; 
+  Color: white;
+  Padding: 20px 0;
+  Text-align: center;
+  Box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
  
 
  
