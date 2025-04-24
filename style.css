@@ -69,6 +69,37 @@ H2 { font-size: 1.8rem; }
 H3 { font-size: 1.5rem; } 
 P { font-size: 1rem; letter-spacing: 0.5px; } 
 
+ /* Buttons & Forms */ 
+Button, input[type=”submit”] { 
+  Background-color: #1e90ff; 
+  Color: white; 
+  Border: none; 
+  Padding: 10px 15px; 
+  Font-size: 1rem; 
+  Cursor: pointer; 
+  Border-radius: 5px; 
+} 
+Button:hover, input[type=”submit”]:hover { 
+  Background-color: #005bb5;
+} 
+Input, textarea, select { 
+  Width: 100%; 
+  Padding: 10px; 
+  Margin-bottom: 15px; 
+  Border-radius: 5px; 
+  Border: 1px solid #ccc; 
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
  
 
  
