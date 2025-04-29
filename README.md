@@ -91,15 +91,15 @@ Project-folder/
 
 ├── images/ 
 
-│   ├── meeting.jpg 
+│   ├── 1.png
 
-│   ├── freelance.jpg 
+│   ├── 2.png
 
-│   ├── jobs.jpg 
+│   ├── 3.png
 
-│   ├── contact-icons.jpg 
+│   ├── 4.png
 
-│   └── testimony.jpg 
+│   └── testimony.png
 
 
 Creator Info 
