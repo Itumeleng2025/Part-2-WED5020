@@ -183,7 +183,34 @@ Input, textarea, select {
   } 
 } 
 
- 
+ /* Image Styling */ 
+
+.styled-img { 
+
+  Width: 100%; 
+
+  Max-width: 600px; 
+
+  Height: auto; 
+
+  Border-radius: 12px; 
+
+  Box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+
+  Transition: transform 0.4s ease, box-shadow 0.4s ease; 
+
+  Margin: 20px auto; 
+
+  Display: block; 
+
+} 
+.styled-img:hover { 
+
+  Transform: scale(1.03); 
+
+  Box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+
+} 
 
  
 
