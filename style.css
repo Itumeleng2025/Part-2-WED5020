@@ -232,7 +232,6 @@ Input, textarea, select {
 /* Hero section with gradient background */ 
 
 * Button with hover */ 
-
 .button { 
   Color: white; 
   Padding: 10px 25px; 
@@ -243,11 +242,9 @@ Input, textarea, select {
   Cursor: pointer; 
   Font-size: 16px; 
 } 
-
 .button:hover { 
   Background-color: #004d99; 
   Transform: translateY(-2px); 
-
 } 
  
 
