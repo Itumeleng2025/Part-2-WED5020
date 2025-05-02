@@ -51,6 +51,22 @@ H3 { font-size: 1.5rem; }
 P { font-size: 1rem; letter-spacing: 0.5px; } 
 
  /* Buttons & Forms */ 
+ Button, .btn { 
+  Background-color: #ff6600; /* Bright orange */ 
+  Color: #fff; 
+  Padding: 10px 20px; 
+  Border: none; 
+  Border-radius: 5px; 
+  Font-weight: bold; 
+  Cursor: pointer; 
+  Transition: background-color 0.3s ease; 
+} 
+
+Button:hover, .btn:hover { 
+
+  Background-color: #e65c00; /* Slightly darker orange */ 
+
+} 
 Button, input[type=”submit”] { 
   Background-color: #1e90ff; 
   Color: white; 
