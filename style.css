@@ -18,7 +18,7 @@ body {
   padding: 20px;
 }
 a {
-  color: #1e3a8a; /* medium blue */
+  Background-color: #00264d; /* Darker Blue */ 
   text-decoration: none;
   font-weight: 600;
 }
@@ -40,7 +40,7 @@ header nav {
 header nav a {
   padding: 8px 16px;
   border-radius: 6px;
-  background-color: #e0e7ff; /* light blue */
+  Background-color: #00264d; /* Darker Blue */ 
   transition: background-color 0.3s ease;
 }
 
