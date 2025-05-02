@@ -24,7 +24,7 @@ a {
 }
 a:hover,
 a:focus {
-  Background-color: #004080; /* Navy Blue */ 
+  Background-color: #00264d; /* Darker Blue */ 
   outline: none;
   text-decoration: underline;
 }
