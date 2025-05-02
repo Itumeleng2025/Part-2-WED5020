@@ -108,7 +108,7 @@ Nav a:hover {
   Border-radius: 12px; 
   Padding: 25px; 
   Width: 300px; 
-  Text-align: left; 
+  Text-align: center; 
   Box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
   Display: flex; 
   Flex-direction: column; 
