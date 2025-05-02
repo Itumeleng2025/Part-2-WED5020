@@ -16,18 +16,10 @@ Header {
   Text-align: center; 
 } 
 
-/* Navigation */
-Nav { 
-Display: flex; 
-Justify-content: center; 
- Gap: 20px; 
- Margin-top: 10px; 
-
-} 
 Nav a { 
-  Color: white; 
+  Color: #fff; 
   Text-decoration: none; 
-  Font-weight: bold; 
+  Margin: 0 15px; 
 } 
 Nav a:hover { 
   Text-decoration: underline; 
