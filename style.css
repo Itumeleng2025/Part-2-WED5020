@@ -70,7 +70,76 @@ Nav a:hover {
   Color: #333; 
   Font-size: 1rem;
 } 
+/* Main container */ 
+.sidehustle-main { 
+  Background-color: #f4faff; 
+  Padding: 60px 30px; 
+  Max-width: 1200px; 
+  Margin: 0 auto; 
+  Font-family: ‘Segoe UI’, Tahoma, Geneva, Verdana, sans-serif; 
+} 
 
+/* Intro text block */ 
+.intro { 
+  Text-align: center; 
+  Margin-bottom: 50px; 
+} 
+.intro h2 { 
+  Font-size: 2.5rem; 
+  Color: #003366; 
+  Margin-bottom: 15px; 
+} 
+.intro p { 
+  Font-size: 1.2rem; 
+  Color: #333; 
+  Max-width: 700px; 
+  Margin: 0 auto; 
+} 
+/* Hustle grid layout */ 
+.hustle-grid { 
+  Display: flex; 
+  Flex-wrap: wrap; 
+  Gap: 30px; 
+  Justify-content: center; 
+} 
+/* Card layout */ 
+.hustle-card { 
+  Background: #ffffff; 
+  Border-radius: 12px; 
+  Padding: 25px; 
+  Width: 300px; 
+  Text-align: left; 
+  Box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+  Display: flex; 
+  Flex-direction: column; 
+  Justify-content: space-between; 
+} 
+.hustle-card h3 { 
+  Color: #004080; 
+  Font-size: 1.4rem; 
+  Margin-bottom: 10px; 
+} 
+
+.hustle-card p { 
+  Color: #555; 
+  Font-size: 1rem; 
+  Margin-bottom: 20px; 
+} 
+/* Button styling */ 
+.explore-btn { 
+  Align-self: flex-start; 
+  Padding: 10px 20px; 
+  Background-color: #0066cc; 
+  Color: #fff; 
+  Border: none; 
+  Border-radius: 6px; 
+  Font-weight: bold; 
+  Cursor: pointer; 
+  Transition: background-color 0.3s ease; 
+} 
+.explore-btn:hover { 
+  Background-color: #004080; 
+} 
  /* Footer */ 
  Footer { 
   Background-color: #00264d; /* Darker Blue */ 
