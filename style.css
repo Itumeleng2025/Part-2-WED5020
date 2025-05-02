@@ -10,15 +10,11 @@ Body {
 } 
 /* Header */ 
 Header { 
-
-  Background-color: #1e90ff; 
-  Color: white;
-  Padding: 20px 0;
-  Text-align: center;
-  Box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  Background-color: #004080; /* Navy Blue */ 
+  Color: #fff; 
+  Padding: 20px; 
+  Text-align: center; 
 } 
-
- 
 
 /* Navigation */
 Nav { 
