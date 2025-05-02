@@ -78,7 +78,26 @@ Nav a:hover {
   Margin: 0 auto; 
   Font-family: ‘Segoe UI’, Tahoma, Geneva, Verdana, sans-serif; 
 } 
-
+.content-section { 
+  Background-color: #ffffff;
+  Padding: 30px; 
+  Border-radius: 12px; 
+  Box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+} 
+.content-section h2 { 
+  Font-size: 28px; 
+  Margin-bottom: 10px; 
+  Color: #003d5c; 
+} 
+.content-section p, 
+.content-section ul { 
+  Font-size: 18px; 
+  Line-height: 1.6; 
+  Color: #333; 
+} 
+.content-section ul { 
+  Padding-left: 20px; 
+} 
 /* Intro text block */ 
 .intro { 
   Text-align: center; 
@@ -125,21 +144,7 @@ Nav a:hover {
   Font-size: 1rem; 
   Margin-bottom: 20px; 
 } 
-/* Button styling */ 
-.explore-btn { 
-  Align-self: flex-start; 
-  Padding: 10px 20px; 
-  Background-color: #0066cc; 
-  Color: #fff; 
-  Border: none; 
-  Border-radius: 6px; 
-  Font-weight: bold; 
-  Cursor: pointer; 
-  Transition: background-color 0.3s ease; 
-} 
-.explore-btn:hover { 
-  Background-color: #004080; 
-} 
+
  /* Footer */ 
  Footer { 
   Background-color: #00264d; /* Darker Blue */ 
