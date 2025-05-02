@@ -215,13 +215,9 @@ Input, textarea, select {
  /* Fade-in effect on page load */ 
 
 .fade-load { 
-
   Opacity: 0; 
-
   Animation: fadeLoad 1s ease forwards; 
-
   Animation-delay: 0.3s; 
-
 } 
 
 @keyframes fadeLoad { 
@@ -235,50 +231,21 @@ Input, textarea, select {
 } 
 /* Hero section with gradient background */ 
 
-.hero-section { 
-
-  Background: linear-gradient(to right, #f0f8ff, #e6f0ff); 
-
-  Padding: 40px; 
-
-  Border-radius: 12px; 
-
-  Margin: 20px auto; 
-
-  Text-align: center; 
-
-} 
- 
 * Button with hover */ 
 
 .button { 
-
-  Background-color: #0066cc; 
-
   Color: white; 
-
   Padding: 10px 25px; 
-
   Border: none; 
-
   Border-radius: 10px; 
-
   Box-shadow: 0 3px 6px rgba(0,0,0,0.2); 
-
   Transition: background-color 0.3s, transform 0.3s; 
-
   Cursor: pointer; 
-
   Font-size: 16px; 
-
 } 
 
- 
-
 .button:hover { 
-
   Background-color: #004d99; 
-
   Transform: translateY(-2px); 
 
 } 
