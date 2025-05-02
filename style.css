@@ -36,13 +36,12 @@ Main {
 } 
 
  /* Footer */ 
-Footer { 
+ Footer { 
+  Background-color: #00264d; /* Darker Blue */ 
+  Color: #fff; 
   Text-align: center; 
-  Padding: 20px; 
-  Background-color: #1e90ff;
-  Color: white; 
-  Margin-top: 30px; 
-  Border-top: 1px solid #ccc; 
+  Padding: 15px; 
+  Margin-top: 20px; 
 } 
 
  /* Typography Scale */ 
