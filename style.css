@@ -251,7 +251,6 @@ Input, textarea, select {
  /* Image Styling */ 
 
 .styled-img { 
-
   Width: 100%; 
   Max-width: 300px; 
   Height: auto; 
@@ -260,13 +259,10 @@ Input, textarea, select {
   Transition: transform 0.4s ease, box-shadow 0.4s ease; 
   Margin: 20px auto; 
   Display: block; 
-
 } 
 .styled-img:hover { 
-
   Transform: scale(1.03); 
   Box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
-
 } 
 
  /* Fade-in effect on page load */ 
@@ -286,23 +282,7 @@ Input, textarea, select {
   } 
 
 } 
-/* Hero section with gradient background */ 
 
-* Button with hover */ 
-.button { 
-  Color: white; 
-  Padding: 10px 25px; 
-  Border: none; 
-  Border-radius: 10px; 
-  Box-shadow: 0 3px 6px rgba(0,0,0,0.2); 
-  Transition: background-color 0.3s, transform 0.3s; 
-  Cursor: pointer; 
-  Font-size: 16px; 
-} 
-.button:hover { 
-  Background-color: #004d99; 
-  Transform: translateY(-2px); 
-} 
  
 
  
