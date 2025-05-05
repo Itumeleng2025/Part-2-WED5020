@@ -76,12 +76,6 @@ ul {
   padding-left: 20px; /* Adds padding to the left of unordered lists */
   list-style-type: disc;/* Sets bullet style for unordered lists */
 }
-/* Animation for contact icons */
-.contact-icons div {
-  opacity: 0; /* Start invisible */
-  transform: translateY(20px); /* Start slightly lower */
-  animation: fadeInUp 0.5s forwards; /* Animation to fade in and move up */
-}
 
 /* Responsive grid container for job lists and payment methods */
 .job-list,
