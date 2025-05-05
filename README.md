@@ -1,114 +1,90 @@
-# Part-2-WED5020
-SideHustle Connect – Phase 2 (CSS Styling) 
+ Part-2-WED5020
+ SideHustle Connect – Phase 2 (CSS Styling) 
+Overview 
 
- 
- Overview 
-
-This phase focuses on enhancing the visual design and interactivity of the SideHustle Connect website using CSS. The goal was to create a cohesive, professional, and user-friendly interface across all six web pages: Home, About, Jobs, Sign Up, Contact and payment. 
-
- 
+ This phase focuses on enhancing the visual design and interactivity of the SideHustle Connect website using CSS. The goal was to create a cohesive, professional, and user-friendly interface across all six web pages: Home, About, Jobs, Sign Up, Contact**, and Payment. 
 
  CSS Objectives (Based on Rubric) 
 
- 1.Establish a Base Style
+ 1. Establish a Base Style 
 
-- Set a universal font family: `’Segoe UI’, Tahoma, Geneva, Verdana, sans-serif` 
+- Set a universal font family: `’Segoe UI’, Tahoma, Geneva, Verdana, sans-serif`. 
 
 - Applied consistent font sizes, color schemes, and margin/padding across all elements. 
 
 - Used a responsive layout that scales well on different devices. 
 
- 2. Typography
+ 2. Typography 
 
 - Applied `font-family`, `font-size`, `font-weight`, `line-height`, and `letter-spacing` to headings and paragraphs. 
 
-- Used a simple modular scale to create harmonious typography: 
+- Used a modular scale to create harmonious typography: 
 
   - Headings: `2rem`, `1.5rem`, `1.25rem` 
 
   - Body text: `1rem` 
 
-  3. Layout Structure
+ 3. Layout Structure 
 
 - Used `header`, `nav`, `main`, and `footer` tags consistently. 
 
-- Aligned content with flex and grid where needed. 
+- Aligned content using flex and grid layouts where needed. 
 
-- Made sure the navigation bar is consistent across all pages. 
+- Maintained a consistent navigation bar across all pages. 
 
- 4. Visual Styling
+ 4. Visual Styling 
 
 - Applied consistent background and text colors. 
 
-- Styled images using `.styled-img` class for sizing and rounded borders. 
+- Styled buttons with hover effects and readable contrast. 
 
-- Added `box-shadow` for visual depth. 
+- Styled images using a `.styled-img` class for sizing and rounded corners. 
 
-  5. Interactive Elements
+- Applied `box-shadow` for depth and separation of elements. 
 
-- Added `:hover`, `:focus`, and `:active` pseudo-classes on buttons and links. 
+  5. Interactive Elements 
 
-- Added a `.fade-load` class for subtle fade-in animation using `@keyframes`. 
+- Used `:hover`, `:focus`, and `:active` pseudo-classes on buttons and links. 
+
+- Fade-in animation removed due to layout spacing issues. 
 
  6. Image Styling 
 
-- Applied responsive and clean styling to all images. 
+- Used responsive styling for all images. 
 
-- Used the same `.styled-img` and `.fade-load` classes. 
+- Unified image styling using `.styled-img` class. 
 
-- Maintained a consistent aesthetic across pages. 
+- Ensured aesthetic consistency across all pages. 
 
-  Images Used 
+ 7. Images Used 
 
-1. People in a meeting 
+1. People in a meeting   
 
-2. Freelancing scene 
+2. Freelancing scene   
 
-3. Jobs with different occupations 
+3. Jobs with different occupations   
 
-4. Contact icons 
+4. Contact icons   
 
-5. Testimony image 
+5. Testimony image   
 
-  File Structure 
+  8. Additional Notes 
 
+- All HTML files now include HTML comments for clarity and documentation. 
 
-7. Project-folder/ 
+-Fade-in animation removed to prevent white spacing issues. 
 
-├── index.html 
+- Layout and alignment issues in the main content have been resolved. 
 
-├── about.html 
+- The entire site shares one unified CSS stylesheet for consistency. 
 
-├── jobs.html 
+  Creator Info :
+Name: Nyakane Itumeleng   
 
-├── signup.html 
+Student Number: ST10445362   
 
-├── contact.html 
+Email: moonflowernyakane34@gmail.com   
 
-├── styles.css 
+GitHub Repository:(https://github.com/Itumeleng2025/Part-2-WED5020.git) 
 
-├── images/ 
-
-│   ├── 1.png
-
-│   ├── 2.png
-
-│   ├── 3.png
-
-│   ├── 4.png
-
-│   └── testimony.png
-
-8. Website Testing:
-![Alt text](<images/Website Testing 1.PNG>)
-![Alt text](<images/Website Testing 2.PNG>)
-
-Creator Info 
-
--Name: Nyakane Itumeleng   
-
--Student Number: ST10445362   
-
--Email: moonflowernyakane34@gmail.com 
-
- GitHub Repository : https://github.com/Itumeleng2025/Part-2-WED5020.git
+ 
