@@ -179,19 +179,6 @@ textarea:focus {
   outline: none;/* Removes default outline */
   box-shadow: 0 0 5px #3b82f6; /* Adds a glow effect on focus */
 }
-
-/* Images fade-in animation */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;/* Start fully transparent */
-    transform: translateY(15px);/* Start slightly lower */
-  }
-  100% {
-    opacity: 1;/* End fully opaque */
-    transform: translateY(0);/* End at original position */
-  }
-}
-
 .styled-img,
 img {
   max-width: 50%;/* Sets maximum width for images */
@@ -488,15 +475,7 @@ main {
   height: auto; /* Maintain aspect ratio */
   animation: fadeIn 1s ease-in; /* Fade-in animation */
 }
-/* Fade-in animation */
-@keyframes fadeIn {
-  from {
-      opacity: 0; /* Start fully transparent */
-  }
-  to {
-      opacity: 1; /* End fully opaque */
-  }
-}
+
 /* List item styles with emoji */
 ul li {
   list-style-type: none; /* Remove default list style */

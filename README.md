@@ -75,8 +75,6 @@ This phase focuses on enhancing the visual design and interactivity of the SideH
 
 7. Project-folder/ 
 
-│ 
-
 ├── index.html 
 
 ├── about.html 
@@ -101,8 +99,9 @@ This phase focuses on enhancing the visual design and interactivity of the SideH
 
 │   └── testimony.png
 
-8. Website Testing: 
-
+8. Website Testing:
+![Alt text](<images/Website Testing 1.PNG>)
+![Alt text](<images/Website Testing 2.PNG>)
 
 Creator Info 
 
