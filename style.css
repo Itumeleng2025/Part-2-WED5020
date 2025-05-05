@@ -474,5 +474,11 @@ form.paypal-form select:focus {
   line-height: 1.5;
 }
 
+/* Animation for contact icons */
+.contact-icons div {
+  opacity: 0; /* Start invisible */
+  transform: translateY(20px); /* Start slightly lower */
+  animation: fadeInUp 0.5s forwards; /* Animation to fade in and move up */
+}
 
 
