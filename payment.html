@@ -1,123 +1,131 @@
+
 <!DOCTYPE html> 
-
-<html lang=”en”> 
-
+<html lang="en"> 
 <head> 
-
-  <meta charset=”UTF-8” /> 
-
-  <meta name=”viewport” content=”width=device-width, initial-scale=1.0” /> 
-
-  <title>SideHustle Connect</title> 
-    <link rel= "stylesheet" a href="style.css">
-
-
-
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <title>SideHustle Connect - Payment</title> 
+  <link rel="stylesheet" href="style.css" />
 </head> 
 
 <body> 
+  <header> 
+    <nav> 
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="contact.html">Contact</a>
+      <a href="payment.html">Payment</a>
+    </nav> 
+  </header> 
 
-    <header> 
-
-        
-
-        <nav> 
-
-          <a href="index.html">Home</a>
-
-          <a href="about.html">About</a>
- 
-          <a href="jobs.html">Jobs</a>
- 
-          <a href="signup.html">Sign Up</a>
- 
-          <a href="contact.html">Contact</a>
-             
-          <a href="payment.html">Payment</a>
-  
-              
-
-        </nav> 
-
-    
-    </header> 
-
-    <main> 
-  
-      <h2>Payment Options</h2> 
-  
-  
-      <div class=”payment-methods”> 
-  
-        <h3>Choose Your Payment Method</h3> 
-  
-  
-        <div class=”payment-method”> 
-  
-          <h4>PayPal</h4> 
-  
-          <p>Make secure payments using your PayPal account. It’s quick and easy!</p> 
-  
-          <button class=”payment-btn”>Pay with PayPal</button> 
-  
-        </div> 
-  
-        <div class=”payment-method”> 
-
-            <h4>Credit/Debit Card</h4> 
-    
-            <p>Use your Visa, MasterCard, or any major credit card to make payments securely.</p> 
-    
-            <button class=”payment-btn”>Pay with Card</button> 
-    
-          </div> 
-
-          <div class=”payment-method”> 
-
-            <h4>Bank Transfer</h4> 
-    
-            <p>Transfer funds directly from your bank account to complete the payment.</p> 
-    
-            <button class=”payment-btn”>Pay via Bank Transfer</button> 
-    
-          </div> 
-    
-        </div> 
-
-        <div class=”payment-info”> 
-
-            <h3>Payment Instructions</h3> 
+  <main> 
+    <h2>Payment Options</h2> 
+    <div class="payment-methods"> 
+      <h3>Choose Your Payment Method</h3> 
       
-            <ul> 
+      <div class="payment-method"> 
+        <h4>PayPal</h4> 
+        <p>Make secure payments using your PayPal account. It’s quick and easy!</p> 
+        <!-- PayPal Payment Form -->
+        <form class="payment-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+          <input type="hidden" name="business" value="merchant@example.com" />
+          <input type="hidden" name="cmd" value="_xclick" />
+          
+          <label for="item_name">Item Name</label>
+          <input type="text" id="item_name" name="item_name" value="SideHustle Connect Subscription" required />
+          
+          <label for="amount">Amount (USD)</label>
+          <input type="number" id="amount" name="amount" min="1" step="0.01" value="10.00" required />
+
+          <input type="hidden" name="currency_code" value="USD" />
+          <button class="payment-btn" type="submit">Pay with PayPal</button>
+        </form>
+      </div> 
       
-              <li>Choose a payment method above and follow the prompts.</li> 
+      <div class="payment-method"> 
+        <h4>Credit/Debit Card</h4> 
+        <p>Use your Visa, MasterCard, or any major credit card to make payments securely.</p> 
+        <!-- Credit/Debit Card Form -->
+        <form class="payment-form" id="cardPaymentForm" onsubmit="return handleCardPayment(event)">
+          <label for="card_name">Cardholder Name</label>
+          <input type="text" id="card_name" name="card_name" placeholder="John Doe" required />
+          
+          <label for="card_number">Card Number</label>
+          <input type="text" id="card_number" name="card_number" placeholder="1234 5678 9012 3456" pattern="\d{13,19}" maxlength="19" inputmode="numeric" required />
+          
+          <label for="card_expiry_month">Expiration Date</label>
+          <select id="card_expiry_month" name="card_expiry_month" required>
+            <option value="">Month</option>
+            <option value="01">01 - Jan</option>
+            <option value="02">02 - Feb</option>
+            <option value="03">03 - Mar</option>
+            <option value="04">04 - Apr</option>
+            <option value="05">05 - May</option>
+            <option value="06">06 - Jun</option>
+            <option value="07">07 - Jul</option>
+            <option value="08">08 - Aug</option>
+            <option value="09">09 - Sep</option>
+            <option value="10">10 - Oct</option>
+            <option value="11">11 - Nov</option>
+            <option value="12">12 - Dec</option>
+          </select>
+          <select id="card_expiry_year" name="card_expiry_year" required>
+            <option value="">Year</option>
+            <!-- Options to be generated by script -->
+          </select>
+          
+          <label for="card_cvv">CVV</label>
+          <input type="text" id="card_cvv" name="card_cvv" placeholder="123" pattern="\d{3,4}" maxlength="4" inputmode="numeric" required />
+          
+          <label for="card_amount">Amount (USD)</label>
+          <input type="number" id="card_amount" name="card_amount" min="1" step="0.01" value="10.00" required />
+          
+          <button class="payment-btn" type="submit">Pay with Card</button>
+        </form>
+      </div> 
       
-              <li>If you choose PayPal, you will be redirected to the PayPal website.</li> 
-      
-              <li>For credit card payments, enter your details securely through our payment gateway.</li>   
+      <div class="payment-method"> 
+        <h4>Bank Transfer</h4> 
+        <p>Transfer funds directly from your bank account to complete the payment.</p> 
+        <!-- Bank Transfer Form -->
+        <form class="payment-form" id="bankTransferForm" onsubmit="return handleBankTransfer(event)">
+          <label for="bank_name">Bank Name</label>
+          <input type="text" id="bank_name" name="bank_name" placeholder="Your Bank" required />
+          
+          <label for="account_holder">Account Holder Name</label>
+          <input type="text" id="account_holder" name="account_holder" placeholder="John Doe" required />
+          
+          <label for="account_number">Account Number</label>
+          <input type="text" id="account_number" name="account_number" placeholder="123456789" pattern="\d{5,20}" required />
+          
+          <label for="transfer_amount">Amount (USD)</label>
+          <input type="number" id="transfer_amount" name="transfer_amount" min="1" step="0.01" value="10.00" required />
+          
+          <button class="payment-btn" type="submit">Pay via Bank Transfer</button>
+        </form>
+      </div> 
+    </div> 
 
-              <li>For bank transfers, our bank details will be provided after selecting the payment method.</li> 
+    <div class="payment-info"> 
+      <h3>Payment Instructions</h3> 
+      <ul> 
+        <li>Choose a payment method above and follow the prompts.</li> 
+        <li>If you choose PayPal, you will be redirected to the PayPal website.</li> 
+        <li>For credit card payments, enter your details securely through our payment gateway.</li>   
+        <li>For bank transfers, our bank details will be provided after selecting the payment method.</li> 
+      </ul> 
+    </div> 
+  </main> 
 
-            </ul> 
-      
-          </div> 
-                
-             
-
-           
-
-</main> 
-
- 
-
-<footer> 
-
+  <footer> 
     <p>&copy; 2025 SideHustle Connect. All rights reserved.</p> 
+  </footer>
 
-</footer> 
-
- 
-
+  
 </body> 
-
 </html>
+
+```
+
