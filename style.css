@@ -480,5 +480,54 @@ form.paypal-form select:focus {
   line-height: 1.5;
 }
 
+/* Main content styles */
+main {
+  padding: 20px; /* Padding around main content */
+}
 
+/* Image styles */
+.styled-img {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  animation: fadeIn 1s ease-in; /* Fade-in animation */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0; /* Start fully transparent */
+  }
+  to {
+      opacity: 1; /* End fully opaque */
+  }
+}
+
+/* List item styles with emoji */
+ul li {
+  list-style-type: none; /* Remove default list style */
+  position: relative; /* Position for pseudo-element */
+  padding-left: 20px; /* Space for emoji */
+}
+
+/* List item styles with emoji */
+ul li {
+  list-style-type: none; /* Remove default list style */
+  position: relative; /* Position for pseudo-element */
+  padding-left: 25px; /* Space for emoji */
+}
+
+/* Adding emoji before each list item */
+ul li::before {
+  content: "✨"; /* Emoji before each list item */
+  position: absolute; /* Position it absolutely */
+  left: 0; /* Align to the left */
+  font-size: 1.2em; /* Size of the emoji */
+  line-height: 1.6; /* Align emoji with text */
+  transition: transform 0.3s; /* Transition for hover effect */
+}
+
+/* Emoji hover effect */
+ul li:hover::before {
+  transform: scale(1.2); /* Slightly enlarge emoji on hover */
+}
 
