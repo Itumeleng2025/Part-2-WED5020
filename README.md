@@ -50,7 +50,7 @@ This phase focuses on enhancing the visual design and interactivity of the SideH
 
 - Added a `.fade-load` class for subtle fade-in animation using `@keyframes`. 
 
- Image Styling 
+ 6. Image Styling 
 
 - Applied responsive and clean styling to all images. 
 
@@ -73,7 +73,7 @@ This phase focuses on enhancing the visual design and interactivity of the SideH
   File Structure 
 
 
-Project-folder/ 
+7. Project-folder/ 
 
 │ 
 
@@ -100,6 +100,8 @@ Project-folder/
 │   ├── 4.png
 
 │   └── testimony.png
+
+8. Website Testing: 
 
 
 Creator Info 

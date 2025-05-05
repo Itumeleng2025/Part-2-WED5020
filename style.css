@@ -1,79 +1,80 @@
 
 /* General base and reset styles */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+  margin: 0;/* Resets default margin */
+  padding: 0;/* Resets default padding */
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   Background-color: #f0f4f8; /* Light blue/grey */  
   color: #0b1d51; /* dark blue */
-  line-height: 1.6;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+  line-height: 1.6;/* Increases line height for better readability */
+  min-height: 100vh;/* Ensures body takes at least full viewport height */
+  display: flex; /* Uses flexbox for layout */
+  flex-direction: column;/* Stacks children vertically */
+  align-items: center;/* Centers children horizontally */
+  padding: 20px;/* Adds padding around the body */
 }
+
 a {
   color: #1e3a8a; /* medium blue */
-  text-decoration: none;
-  font-weight: 600;
+  text-decoration: none;/* Removes underline from links */
+  font-weight: 600;/* Makes links bold */
 }
 a:hover,
 a:focus {
   Background-color: #004080; /* Navy Blue */ 
-  outline: none;
-  text-decoration: underline;
+  outline: none;/* Removes default outline */
+  text-decoration: underline;/* Removes default outline */
 }
 
 header nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
+  display: flex; /* Uses flexbox for navigation layout */
+  justify-content: center;/* Centers navigation items */
+  gap: 20px;/* Adds space between navigation items */
+  margin-bottom: 30px;/* Adds space below the navigation */
+  flex-wrap: wrap;/* Allows items to wrap to the next line if necessary */
 }
 
 header nav a {
-  padding: 8px 16px;
-  border-radius: 6px;
+  padding: 8px 16px; /* Adds padding around navigation links */
+  border-radius: 6px;/* Rounds the corners of navigation links */
   background-color: #e0e7ff; /* light blue */
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;/* Smooth transition for background color */
 }
 
 header nav a:hover,
 header nav a:focus {
-  background-color: #c7d2fe; /* lighter blue */
-  outline: none;
+  background-color: #c7d2fe;/* Lighter blue background on hover/focus */
+  outline: none;/* Removes default outline */
 }
 
 main {
-  max-width: 900px;
-  width: 100%;
-  background-color: white;
-  padding: 30px 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.1);
+  max-width: 900px;/* Sets a maximum width for the main content */
+  width: 100%;/* Allows main content to take full width */
+  background-color: white;/* White background for main content */
+  padding: 30px 40px;/* Adds padding inside the main content */
+  border-radius: 10px;/* Rounds the corners of the main content */
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.1);/* Adds a subtle shadow for depth */
 }
 
 h1, h2, h3, h4 {
-  color: #1e40af; /* strong blue */
-  margin-bottom: 12px;
-  font-weight: 700;
+  color: #1e40af; /* Strong blue color for headings */
+  margin-bottom: 12px;/* Adds space below headings */
+  font-weight: 700; /* Makes headings bold */
 }
 
 p, ul, li {
-  margin-bottom: 16px;
-  font-size: 1rem;
+  margin-bottom: 16px;/* Adds space below paragraphs and list items */
+  font-size: 1rem;/* Sets font size for paragraphs and list items */
   color: #334155; /* dark greyish-blue */
 }
 
 ul {
-  padding-left: 20px;
-  list-style-type: disc;
+  padding-left: 20px; /* Adds padding to the left of unordered lists */
+  list-style-type: disc;/* Sets bullet style for unordered lists */
 }
 /* Animation for contact icons */
 .contact-icons div {
@@ -85,48 +86,48 @@ ul {
 /* Responsive grid container for job lists and payment methods */
 .job-list,
 .payment-methods {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
-  margin-top: 20px;
+  display: grid;/* Uses grid layout for job lists and payment methods */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));/* Responsive columns */
+  gap: 24px;/* Space between grid items */
+  margin-top: 20px;/* Space above the grid */
 }
 
 .job,
 .payment-method {
-  background-color: #f1f5f9; /* very light grey blue */
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 1px 4px rgb(15 23 42 / 0.1);
-  transition: box-shadow 0.3s ease;
+  background-color: #f1f5f9; /* Very light grey blue background for job/payment items */
+  border-radius: 8px;/* Rounds the corners of job/payment items */
+  padding: 20px;/* Adds padding inside job/payment items */
+  box-shadow: 0 1px 4px rgb(15 23 42 / 0.1);/* Subtle shadow for depth*/
 }
-
+  
+/* Job and Payment Method Hover Effects */
 .job:hover,
 .payment-method:hover {
-  box-shadow: 0 6px 15px rgb(59 130 246 / 0.3);
+  box-shadow: 0 6px 15px rgb(59 130 246 / 0.3); /* Adds a shadow effect on hover for job/payment items */
 }
 
 /* Buttons style */
 button,
 .cta-button {
-  display: inline-block;
+  display: inline-block; /* Allows buttons to be inline with other elements */
   background-color: #2563eb; /* bright blue */
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  font-size: 1.1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 700;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  outline-offset: 2px;
-  outline-color: transparent;
-  outline-style: solid;
-  outline-width: 2px;
+  color: white;/* White text color */
+  border: none;/* No border */
+  padding: 12px 24px;/* Padding inside the button */
+  font-size: 1.1rem; /* Font size for button text */
+  border-radius: 8px;/* Rounds the corners of the button */
+  cursor: pointer;/* Changes cursor to pointer on hover */
+  font-weight: 700;/* Makes button text bold */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;/* Smooth transition for background and shadow */
+  text-align: center; /* Centers text inside the button */
+  user-select: none; /* Prevents text selection */
+  -webkit-user-select: none;/* Prevents text selection in WebKit browsers */
+  -moz-user-select: none;/* Prevents text selection in Firefox */
+  -ms-user-select: none;/* Prevents text selection in Internet Explorer */
+  outline-offset: 2px;/* Space between outline and button */
+  outline-color: transparent;/* Sets outline color to transparent */
+  outline-style: solid;/* Solid outline style */
+  outline-width: 2px;/* Width of the outline */
 }
 
 button:hover,
@@ -134,24 +135,24 @@ button:hover,
 button:focus,
 .cta-button:focus {
   background-color: #3b82f6; /* lighter blue */
-  box-shadow: 0 0 8px #3b82f6;
+  box-shadow: 0 0 8px #3b82f6; /* Adds a glow effect on hover/focus */
   outline-color: #93c5fd; /* light blue outline */
-  outline-style: solid;
-  outline-width: 3px;
-  outline-offset: 4px;
+  outline-style: solid;/* Solid outline style */
+  outline-width: 3px; /* Width of the outline */
+  outline-offset: 4px;/* Space between outline and button */
 }
 
 /* Form styling */
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-top: 20px;
+  display: flex; /* Uses flexbox for layout */
+  flex-direction: column;/* Stacks form elements vertically */
+  gap: 16px;/* Space between form elements */
+  margin-top: 20px;/* Space above the form */
 }
 
 label {
-  font-weight: 700;
-  color: #1e40af;
+  font-weight: 700; /* Makes label text bold */
+  color: #1e40af;/* Strong blue color for labels */
 }
 
 input[type="text"],
@@ -159,14 +160,14 @@ input[type="email"],
 input[type="password"],
 select,
 textarea {
-  padding: 10px;
+  padding: 10px;/* Padding inside input fields */
   border: 2px solid #cbd5e1; /* light grey-blue */
-  border-radius: 8px;
-  font-size: 1rem;
-  font-family: inherit;
-  transition: border-color 0.3s ease;
-  resize: vertical;
-  min-height: 38px;
+  border-radius: 8px;/* Rounds the corners of input fields */
+  font-size: 1rem;/* Font size for input fields */
+  font-family: inherit;/* Inherits font family from parent */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+  resize: vertical; /* Allows vertical resizing of textarea */
+  min-height: 38px;/* Minimum height for input fields */
 }
 
 input[type="text"]:focus,
@@ -174,315 +175,319 @@ input[type="email"]:focus,
 input[type="password"]:focus,
 select:focus,
 textarea:focus {
-  border-color: #3b82f6;
-  outline: none;
-  box-shadow: 0 0 5px #3b82f6;
+  border-color: #3b82f6;/* Changes border color on focus */
+  outline: none;/* Removes default outline */
+  box-shadow: 0 0 5px #3b82f6; /* Adds a glow effect on focus */
 }
 
 /* Images fade-in animation */
 @keyframes fadeIn {
   0% {
-    opacity: 0;
-    transform: translateY(15px);
+    opacity: 0;/* Start fully transparent */
+    transform: translateY(15px);/* Start slightly lower */
   }
   100% {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1;/* End fully opaque */
+    transform: translateY(0);/* End at original position */
   }
 }
 
 .styled-img,
 img {
-  max-width: 50%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  border-radius: 12px;
-  animation: fadeIn 1s ease forwards;
-  opacity: 0;
-  animation-delay: 0.2s;
-  animation-fill-mode: forwards;
-  /* To ensure fade-in triggers only once on page load */
+  max-width: 50%;/* Sets maximum width for images */
+  height: auto;/* Maintains aspect ratio */
+  display: block;/* Displays images as block elements */
+  margin: 20px auto; /* Centers images with margin */
+  border-radius: 12px;/* Rounds the corners of images */
+  animation: fadeIn 1s ease forwards;/* Applies fade-in animation */
+  opacity: 0; /* Start invisible */
+  animation-delay: 0.2s;/* Delay before animation starts */
+  animation-fill-mode: forwards;/* Ensures fade*/
 }
-
 /* Typography Scale */  
-
-H1 { font-size: 2.2rem; }  
-
-H2 { font-size: 1.8rem; }  
-
-H3 { font-size: 1.5rem; }  
-
-P { font-size: 1rem; letter-spacing: 0.5px; }  
-
- 
+H1 { font-size: 2.2rem; }/* Font size for main headings (H1) */
+H2 { font-size: 1.8rem; } /* Font size for secondary headings (H2) */
+H3 { font-size: 1.5rem; } /* Font size for tertiary headings (H3) */ 
+P { font-size: 1rem; letter-spacing: 0.5px; }  /* Font size for paragraphs */
 /* Footer styles */
 footer {
-  margin-top: 30px;
-  width: 100%;
-  max-width: 900px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #64748b; /* muted blue-grey */
+  margin-top: 30px;/* Space above the footer */
+  width: 100%;/* Full width of the footer */
+  max-width: 900px;/* Maximum width for the footer */
+  text-align: center;/* Centers text inside the footer */
+  font-size: 0.9rem;/* Font size for footer text */
+  color: #64748b; /* Muted blue-grey color for footer text */
 }
-
 /* Responsive adjustments */
 @media (max-width: 600px) {
   main {
-    padding: 20px;
-    margin: 0 10px;
+    padding: 20px;/* Padding for main content on small screens */
+    margin: 0 10px;/* Margin on the sides for main content */
   }
-
   header nav {
-    gap: 12px;
+    gap: 12px;/* Reduced gap between navigation items on small screens */
   }
-
   button,
   .cta-button {
-    width: 100%;
-    box-sizing: border-box;
+    width: 100%;/* Full width for buttons on small screens */
+    box-sizing: border-box;/* Ensures padding and border are included in width */
   }
 }
-
 h2 .emoji {
-  animation: bounce 2s infinite;
-  display: inline-block;
-  margin-left: 0.5rem;
+  animation: bounce 2s infinite;/* Bouncing animation for emoji */
+  display: inline-block;/* Allows emoji to be inline with text */
+  margin-left: 0.5rem;/* Space between emoji and text */
 }
 .payment-methods {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgb(0 0 0 / 0.08);
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  animation: fadeInUp 1s ease forwards;
-  opacity: 0;
-  transform: translateY(30px);
+  background: #fff;/* White background for payment methods container */
+  padding: 1.5rem;/* Padding inside the container */
+  border-radius: 10px;/* Rounds the corners of the container */
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.08);/* Subtle shadow for depth */
+  display: flex; /* Uses flexbox for layout */
+  flex-direction: column;/* Stacks payment methods vertically */
+  gap: 1.5rem; /* Space between payment methods */
+  animation: fadeInUp 1s ease forwards;/* Fade-in animation for the container */
+  opacity: 0;/* Start invisible */
+  transform: translateY(30px);/* Start slightly lower */
 }
 .payment-method {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
-  background-color: #fafafa;
-  box-shadow: inset 0 0 5px #ddd;
-  user-select: none;
-  animation: fadeInSlide 1s ease forwards;
-  opacity: 0;
-  transform: translateX(-30px);
+  border: 1px solid #ddd; /* Light grey border for payment method items */
+  border-radius: 8px; /* Rounds the corners of payment method items */
+  padding: 1rem;/* Padding inside payment method items */
+  background-color: #fafafa; /* Very light grey background for payment method items */
+  box-shadow: inset 0 0 5px #ddd;/* Inset shadow for depth */
+  user-select: none;/* Prevents text selection */
+  animation: fadeInSlide 1s ease forwards;/* Slide-in animation for payment method items */
+  opacity: 0;/* Start invisible */
+  transform: translateX(-30px);/* Start slightly to the left */
 }
-.payment-method:nth-child(1) { animation-delay: 0.4s; }
-.payment-method:nth-child(2) { animation-delay: 0.6s; }
-.payment-method:nth-child(3) { animation-delay: 0.8s; }
+.payment-method:nth-child(1) { animation-delay: 0.4s; }/* Delay for the first payment method */
+.payment-method:nth-child(2) { animation-delay: 0.6s; }/* Delay for the second payment method */
+.payment-method:nth-child(3) { animation-delay: 0.8s; }/* Delay for the third payment method */
 .payment-method h4 {
-  margin-top: 0;
-  color: #333;
-  margin-bottom: 0.3rem;
-  font-weight: 700;
-  font-size: 1.25rem;
+  margin-top: 0; /* Removes top margin for the heading */
+  color: #333;/* Dark grey color for the heading */
+  margin-bottom: 0.3rem;/* Space below the heading */
+  font-weight: 700;/* Makes heading bold */
+  font-size: 1.25rem;/* Font size for payment method headings */
 }
+/* Emoji styles within payment method headings */
 .payment-method h4 .emoji {
-  margin-left: 0.4rem;
-  animation: pulse 3s infinite;
-  display: inline-block;
+  margin-left: 0.4rem;/* Space between heading text and emoji */
+  animation: pulse 3s infinite;/* Pulsing animation for the emoji */
+  display: inline-block; /* Allows emoji to be inline with text */
 }
+/* Paragraph styles within payment methods */
 .payment-method p {
-  margin: 0.5rem 0 1rem 0;
-  font-size: 0.95rem;
-  color: #555;
-  min-height: 48px;
+  margin: 0.5rem 0 1rem 0;/* Space above and below the paragraph */
+  font-size: 0.95rem;/* Font size for paragraph text */
+  color: #555;/* Medium grey color for paragraph text */
+  min-height: 48px;/* Minimum height for paragraph to ensure consistent spacing */
 }
 /* Form Styles */
 form.payment-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  max-width: 320px;
+  display: flex; /* Uses flexbox for layout */
+  flex-direction: column;/* Stacks form elements vertically */
+  gap: 0.6rem;/* Space between form elements */
+  max-width: 320px;/* Maximum width for the payment form */
 }
+/* Label styles within payment forms */
 form.payment-form label {
-  font-weight: 600;
-  font-size: 0.9rem;
-  margin-bottom: 0.3rem;
-  user-select: text;
+  font-weight: 600;/* Makes label text bold */
+  font-size: 0.9rem;/* Font size for labels */
+  margin-bottom: 0.3rem;/* Space below the label */
+  user-select: text;/* Allows text selection for labels */
 }
+/* Input styles for text, number, and select elements in payment forms */
 form.payment-form input[type="text"],
 form.payment-form input[type="number"],
 form.payment-form select {
-  width: 100%;
-  padding: 0.4rem 0.6rem;
-  border: 1.5px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  box-sizing: border-box;
-  transition: border-color 0.3s ease;
+  width: 100%; /* Full width for input fields */
+  padding: 0.4rem 0.6rem; /* Padding inside input fields */
+  border: 1.5px solid #ccc; /* Light grey border */
+  border-radius: 5px;/* Rounds the corners of input fields */
+  font-size: 1rem;/* Font size for input fields */
+  box-sizing: border-box;/* Ensures padding and border are included in width */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
 }
 form.payment-form input[type="text"]:focus,
 form.payment-form input[type="number"]:focus,
 form.payment-form select:focus {
-  border-color: #004aad;
-  outline: none;
-  box-shadow: 0 0 8px #004aadaa;
+  border-color: #004aad;/* Changes border color on focus */
+  outline: none;/* Removes default outline */
+  box-shadow: 0 0 8px #004aadaa;/* Adds a glow effect on focus */
 }
-.payment-btn {
-  background-color: #004aad;
-  color: white;
-  padding: 0.6rem 1rem;
-  border: none;
-  border-radius: 6px;
-  font-weight: 700;
-  cursor: pointer;
-  font-size: 1.1rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-top: 0.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
-  user-select: none;
-  box-shadow: 0 3px 8px rgb(0 74 173 / 0.5);
-  overflow: hidden;
-  position: relative;
-}
+/* Button styles for payment actions */
+.payment-btn {background-color: #004aad; /* Dark blue background for button */
+  color: white; /* White text color */
+  padding: 0.6rem 1rem; /* Padding inside the button */
+  border: none; /* No border */
+  border-radius: 6px; /* Rounds the corners of the button */
+  font-weight: 700; /* Makes button text bold */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  font-size: 1.1rem; /* Font size for button text */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for background and transform */
+  margin-top: 0.6rem; /* Space above the button */
+  display: flex; /* Uses flexbox for button layout */
+  align-items: center; /* Centers items vertically in the button */
+  justify-content: center; /* Centers items horizontally in the button */
+  gap: 0.4rem; /* Space between button text and emoji */
+  user-select: none; /* Prevents text selection */
+  box-shadow: 0 3px 8px rgb(0 74 173 / 0.5); /* Subtle shadow for depth */
+  overflow: hidden; /* Hides overflow content */
+  position: relative; /* Allows positioning of child elements */
 .payment-btn:hover,
 .payment-btn:focus {
   background-color: #00307d;
   outline: none;
   transform: scale(1.05);
-  box-shadow: 0 6px 16px rgb(0 74 173 / 0.8);
+  box-shadow: 0 6px 16px rgb(0 74 173 / 0.8);}
+  background-color: #004aad; /* Dark blue background for button */
+  color: white; /* White text color */
+  padding: 0.6rem 1rem; /* Padding inside the button */
+  border: none; /* No border */
+  border-radius: 6px; /* Rounds the corners of the button */
+  font-weight: 700; /* Makes button text bold */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  font-size: 1.1rem; /* Font size for button text */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for background and transform */
+  margin-top: 0.6rem; /* Space above the button */
+  display: flex; /* Uses flexbox for button layout */
+  align-items: center; /* Centers items vertically in the button */
+  justify-content: center; /* Centers items horizontally in the button */
+  gap: 0.4rem; /* Space between button text and emoji */
+  user-select: none; /* Prevents text selection */
+  box-shadow: 0 3px 8px rgb(0 74 173 / 0.5); /* Subtle shadow for depth */
+  overflow: hidden; /* Hides overflow content */
+  position: relative; /* Allows positioning of child elements */}
+/* Hover and focus styles for payment buttons */
+.payment-btn:hover,
+.payment-btn:focus {
+  background-color: #00307d; /* Darker blue background on hover/focus */
+  outline: none; /* Removes default outline */
+  transform: scale(1.05); /* Slightly enlarges button on hover/focus */
+  box-shadow: 0 6px 16px rgb(0 74 173 / 0.8); /* Stronger shadow on hover/focus for depth */
 }
+/* Emoji styles within payment button */
 .payment-btn .emoji {
-  font-size: 1.25rem;
-  animation: bounce 1.5s infinite;
-  display: inline-block;
-  user-select: none;
+  font-size: 1.25rem; /* Larger font size for emoji */
+  animation: bounce 1.5s infinite; /* Bounce animation for emoji */
+  display: inline-block; /* Allows emoji to be inline with text */
+  user-select: none; /* Prevents text selection */
 }
+/* Payment information box styles */
 .payment-info {
-  max-width: 700px;
-  margin: 1.5rem auto 2rem;
-  background: #fff;
-  padding: 1.25rem 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgb(0 0 0 / 0.08);
-  color: #444;
-  font-size: 0.95rem;
-  line-height: 1.5;
+  max-width: 700px; /* Maximum width for the payment info box */
+  margin: 1.5rem auto 2rem; /* Centered with vertical margins */
+  background: #fff; /* White background for the info box */
+  padding: 1.25rem 1.5rem; /* Padding inside the box */
+  border-radius: 10px; /* Rounds the corners of the box */
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.08); /* Soft shadow for depth */
+  color: #444; /* Dark gray text color */
+  font-size: 0.95rem; /* Slightly smaller font size */
+  line-height: 1.5; /* Comfortable line height for readability */
 }
-/* Footer */
+/* Footer styles */
 footer {
-  text-align: center;
-  background-color: #004aad;
-  color: white;
-  font-size: 0.9rem;
-  padding: 1rem 0;
-  margin-top: auto;
-  user-select: none;
+  text-align: center; /* Centers text in the footer */
+  background-color: #004aad; /* Dark blue background for footer */
+  color: white; /* White text color */
+  font-size: 0.9rem; /* Smaller font size for footer text */
+  padding: 1rem 0; /* Vertical padding for footer */
+  margin-top: auto; /* Pushes footer to the bottom of the page */
+  user-select: none; /* Prevents text selection in footer */
 }
-/* Responsive (max width 600px) */
+/* Responsive adjustments for screens with max width of 600px */
 @media (max-width: 600px) {
   main {
-    padding: 1rem;
+    padding: 1rem; /* Smaller padding for main content on small screens */
   }
   .payment-methods {
-    padding: 1rem;
+    padding: 1rem; /* Smaller padding for payment methods container */
   }
   form.payment-form {
-    max-width: 100%;
+    max-width: 100%; /* Full width for payment form on small screens */
   }
 }
-/* Animations */
+/* Bounce animation for emojis */
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.15); }
+  0%, 100% { transform: translateY(0); } /* Start and end at original position */
+  50% { transform: translateY(-8px); } /* Move up by 8px halfway */
 }
 
-@keyframes fadeInSlide {
-  0% {
-    opacity: 0; 
-    transform: translateX(-30px);
-  }
-  100% {
-    opacity: 1; 
-    transform: translateX(0);
-  }
-}
-@keyframes headerGlow {
-  0% { box-shadow: 0 0 5px #004aad; }
-  100% { box-shadow: 0 0 20px #ffb400; }
+/* Pulse animation for emojis */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); } /* Normal size at start and end */
+  50% { transform: scale(1.15); } /* Slightly enlarge halfway */
 }
 /* PayPal Form Styles */
 form.paypal-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  max-width: 300px;
+  display: flex; /* Uses flexbox for layout */
+  flex-direction: column; /* Stacks form elements vertically */
+  gap: 0.6rem; /* Space between form elements */
+  max-width: 300px; /* Sets a maximum width for the form */
 }
 form.paypal-form label {
-  font-weight: 600;
-  font-size: 0.9rem;
-  margin-bottom: 0.3rem;
+  font-weight: 600; /* Semi-bold font weight for labels */
+  font-size: 0.9rem; /* Font size for labels */
+  margin-bottom: 0.3rem; /* Space below the label */
 }
 form.paypal-form input[type="text"],
 form.paypal-form input[type="number"],
 form.paypal-form select {
-  width: 100%;
-  padding: 0.4rem 0.6rem;
-  border: 1.5px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  box-sizing: border-box;
-  transition: border-color 0.3s ease;
+  width: 100%; /* Full width for input fields */
+  padding: 0.4rem 0.6rem; /* Padding inside input fields */
+  border: 1.5px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounds the corners of input fields */
+  font-size: 1rem; /* Normal font size for input fields */
+  box-sizing: border-box; /* Includes padding and border in width */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
 }
 form.paypal-form input[type="text"]:focus,
 form.paypal-form input[type="number"]:focus,
 form.paypal-form select:focus {
-  border-color: #004aad;
-  outline: none;
+  border-color: #004aad; /* Changes border color to blue on focus */
+  outline: none; /* Removes default outline */
 }
+/* Payment Button Styles */
 .payment-btn {
-  background-color: #00457d;
-  color: white;
-  padding: 0.6rem 1rem;
-  border: none;
-  border-radius: 6px;
-  font-weight: 700;
-  cursor: pointer;
-  font-size: 1.1rem;
-  transition: background-color 0.3s ease;
+  background-color: #00457d; /* Dark blue background for button */
+  color: white; /* White text color */
+  padding: 0.6rem 1rem; /* Padding inside the button */
+  border: none; /* No border */
+  border-radius: 6px; /* Rounds the corners of the button */
+  font-weight: 700; /* Bold font weight for button text */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  font-size: 1.1rem; /* Font size for button text */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 .payment-btn:hover,
 .payment-btn:focus {
-  background-color: #00457d;
-  outline: none;
+  background-color: #00457d; /* Keeps the same background color on hover/focus */
+  outline: none; /* Removes default outline */
 }
+/* Payment Information Box Styles */
 .payment-info {
-  max-width: 700px;
-  margin: 1.5rem auto 2rem;
-  background: #fff;
-  padding: 1.25rem 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgb(0 0 0 / 0.08);
-  color: #444;
-  font-size: 0.95rem;
-  line-height: 1.5;
+  max-width: 700px; /* Maximum width for the payment info box */
+  margin: 1.5rem auto 2rem; /* Centered with vertical margins */
+  background: #fff; /* White background for the info box */
+  padding: 1.25rem 1.5rem; /* Padding inside the box */
+  border-radius: 10px; /* Rounds the corners of the box */
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.08); /* Soft shadow for depth */
+  color: #444; /* Dark gray text color */
+  font-size: 0.95rem; /* Slightly smaller font size */
+  line-height: 1.5; /* Comfortable line height for readability */
 }
-
 /* Main content styles */
 main {
   padding: 20px; /* Padding around main content */
 }
-
 /* Image styles */
 .styled-img {
   max-width: 100%; /* Responsive image */
   height: auto; /* Maintain aspect ratio */
   animation: fadeIn 1s ease-in; /* Fade-in animation */
 }
-
 /* Fade-in animation */
 @keyframes fadeIn {
   from {
@@ -492,21 +497,12 @@ main {
       opacity: 1; /* End fully opaque */
   }
 }
-
 /* List item styles with emoji */
 ul li {
   list-style-type: none; /* Remove default list style */
   position: relative; /* Position for pseudo-element */
   padding-left: 20px; /* Space for emoji */
 }
-
-/* List item styles with emoji */
-ul li {
-  list-style-type: none; /* Remove default list style */
-  position: relative; /* Position for pseudo-element */
-  padding-left: 25px; /* Space for emoji */
-}
-
 /* Adding emoji before each list item */
 ul li::before {
   content: "✨"; /* Emoji before each list item */
@@ -516,9 +512,7 @@ ul li::before {
   line-height: 1.6; /* Align emoji with text */
   transition: transform 0.3s; /* Transition for hover effect */
 }
-
 /* Emoji hover effect */
 ul li:hover::before {
   transform: scale(1.2); /* Slightly enlarge emoji on hover */
 }
-
