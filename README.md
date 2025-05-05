@@ -2,7 +2,7 @@
  SideHustle Connect – Phase 2 (CSS Styling) 
 Overview 
 
- This phase focuses on enhancing the visual design and interactivity of the SideHustle Connect website using CSS. The goal was to create a cohesive, professional, and user-friendly interface across all six web pages: Home, About, Jobs, Sign Up, Contact**, and Payment. 
+ This phase focuses on enhancing the visual design and interactivity of the SideHustle Connect website using CSS. The goal was to create a cohesive, professional, and user-friendly interface across all six web pages: Home, About, Jobs, Sign Up, Contact, and Payment. 
 
  CSS Objectives (Based on Rubric) 
 
