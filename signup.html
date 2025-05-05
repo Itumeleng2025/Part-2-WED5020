@@ -1,116 +1,62 @@
-<!DOCTYPE html><html lang=”en”> 
+<!DOCTYPE html>
+<html lang="en"> 
 
 <head> 
-
-    <meta charset=”UTF-8”> 
-
-    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”> 
-
-    <title> SideHustle Connect</title> 
-    <link rel= "stylesheet" a href="style.css">
-
-
-   
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design for mobile devices -->
+    <title>SideHustle Connect</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS stylesheet -->
 </head> 
 
 <body> 
-
     <header> 
-
         <nav> 
-
+            <!-- Navigation links to different sections of the website -->
             <a href="index.html">Home</a>
-
             <a href="about.html">About</a>
-   
             <a href="jobs.html">Jobs</a>
-   
             <a href="signup.html">Sign Up</a>
-   
             <a href="contact.html">Contact</a>
-               
             <a href="payment.html">Payment</a>
-   
         </nav> 
+    </header>
 
-    </header><main> 
+    <main> 
+        <section id="signup"> <!-- Section for the signup form -->
+            <h1>Create Your Account</h1> <!-- Main heading for the signup page -->
+            <p>Join SideHustle Connect and start finding gigs that match your skills.</p> <!-- Introductory text -->
 
-    <section id=”signup”> 
+            <form action="submit_signup.php" method="POST"> <!-- Form for user signup -->
+                <label for="fullname">Full Name:</label> <!-- Label for full name input -->
+                <input type="text" id="fullname" name="fullname" required> <!-- Input for full name -->
 
-        <h1>Create Your Account</h1> 
+                <label for="email">Email Address:</label> <!-- Label for email input -->
+                <input type="email" id="email" name="email" required> <!-- Input for email address -->
 
-        <p>Join SideHustle Connect and start finding gigs that match your skills.</p> 
+                <label for="password">Password:</label> <!-- Label for password input -->
+                <input type="password" id="password" name="password" required> <!-- Input for password -->
 
-         
+                <label for="confirm-password">Confirm Password:</label> <!-- Label for confirm password input -->
+                <input type="password" id="confirm-password" name="confirm-password" required> <!-- Input for confirming password -->
 
-        <form action=”submit_signup.php” method=”POST”> 
+                <label for="skills">Skills & Expertise:</label> <!-- Label for skills input -->
+                <textarea id="skills" name="skills" placeholder="List your skills (e.g., graphic design, writing, web development)..." required></textarea> <!-- Textarea for skills -->
 
-            <label for=”fullname”>Full Name:</label> 
+                <label for="experience">Experience Level:</label> <!-- Label for experience level selection -->
+                <select id="experience" name="experience"> <!-- Dropdown for experience level -->
+                    <option value="beginner">Beginner</option> <!-- Option for beginner -->
+                    <option value="intermediate">Intermediate</option> <!-- Option for intermediate -->
+                    <option value="expert">Expert</option> <!-- Option for expert -->
+                </select> 
 
-            <input type=”text” id=”fullname” name=”fullname” required> 
+                <button type="submit" class="cta-button">Sign Up</button> <!-- Submit button for the form -->
+            </form> 
+        </section> 
+    </main> 
 
-             
-
-            <label for=”email”>Email Address:</label> 
-
-            <input type=”email” id=”email” name=”email” required> 
-
-             
-
-            <label for=”password”>Password:</label> 
-
-            <input type=”password” id=”password” name=”password” required> 
-
-             
-
-            <label for=”confirm-password”>Confirm Password:</label> 
-
-            <input type=”password” id=”confirm-password” name=”confirm-password” required> 
-
-             
-
-            <label for=”skills”>Skills & Expertise:</label> 
-
-            <textarea id=”skills” name=”skills” placeholder=”List your skills (e.g., graphic design, writing, web development)…” required></textarea> 
-
-             
-
-            <label for=”experience”>Experience Level:</label> 
-
-            <select id=”experience” name=”experience”> 
-
-                <option value=”beginner”>Beginner</option> 
-
-                <option value=”intermediate”>Intermediate</option> 
-
-                <option value=”expert”>Expert</option> 
-
-            </select> 
-
-             
-
-            <button type="submit" class="cta-button">Sign Up</button>
-            
-        </form> 
-
-    </section> 
-
-</main> 
-
- 
-
-<footer> 
-
-    <p>&copy; 2025 SideHustle Connect. All Rights Reserved.</p> 
-
-    <p><a href=mailto:support@sidehustleconnect.com>Contact Us</a></p> 
-
-</footer> 
-
- 
-
+    <footer> 
+        <p>&copy; 2025 SideHustle Connect. All Rights Reserved.</p> <!-- Footer with copyright information -->
+        <p><a href="mailto:support@sidehustleconnect.com">Contact Us</a></p> <!-- Link to contact support via email -->
+    </footer> 
 </body> 
-
-</html> 
-
- 
+</html>
