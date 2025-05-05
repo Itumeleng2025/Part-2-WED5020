@@ -237,6 +237,12 @@ footer {
     box-sizing: border-box;
   }
 }
+
+h2 .emoji {
+  animation: bounce 2s infinite;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
 .payment-methods {
   background: #fff;
   padding: 1.5rem;
@@ -245,6 +251,9 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
 }
 .payment-method {
   border: 1px solid #ddd;
@@ -252,17 +261,161 @@ footer {
   padding: 1rem;
   background-color: #fafafa;
   box-shadow: inset 0 0 5px #ddd;
+  user-select: none;
+  animation: fadeInSlide 1s ease forwards;
+  opacity: 0;
+  transform: translateX(-30px);
 }
+.payment-method:nth-child(1) { animation-delay: 0.4s; }
+.payment-method:nth-child(2) { animation-delay: 0.6s; }
+.payment-method:nth-child(3) { animation-delay: 0.8s; }
 .payment-method h4 {
   margin-top: 0;
   color: #333;
   margin-bottom: 0.3rem;
   font-weight: 700;
+  font-size: 1.25rem;
+}
+.payment-method h4 .emoji {
+  margin-left: 0.4rem;
+  animation: pulse 3s infinite;
+  display: inline-block;
 }
 .payment-method p {
   margin: 0.5rem 0 1rem 0;
   font-size: 0.95rem;
   color: #555;
+  min-height: 48px;
+}
+/* Form Styles */
+form.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  max-width: 320px;
+}
+form.payment-form label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  user-select: text;
+}
+form.payment-form input[type="text"],
+form.payment-form input[type="number"],
+form.payment-form select {
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+form.payment-form input[type="text"]:focus,
+form.payment-form input[type="number"]:focus,
+form.payment-form select:focus {
+  border-color: #004aad;
+  outline: none;
+  box-shadow: 0 0 8px #004aadaa;
+}
+.payment-btn {
+  background-color: #004aad;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  user-select: none;
+  box-shadow: 0 3px 8px rgb(0 74 173 / 0.5);
+  overflow: hidden;
+  position: relative;
+}
+.payment-btn:hover,
+.payment-btn:focus {
+  background-color: #00307d;
+  outline: none;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgb(0 74 173 / 0.8);
+}
+.payment-btn .emoji {
+  font-size: 1.25rem;
+  animation: bounce 1.5s infinite;
+  display: inline-block;
+  user-select: none;
+}
+.payment-info {
+  max-width: 700px;
+  margin: 1.5rem auto 2rem;
+  background: #fff;
+  padding: 1.25rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.08);
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #004aad;
+  color: white;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  margin-top: auto;
+  user-select: none;
+}
+/* Responsive (max width 600px) */
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+  .payment-methods {
+    padding: 1rem;
+  }
+  form.payment-form {
+    max-width: 100%;
+  }
+}
+/* Animations */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0; 
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1; 
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0; 
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1; 
+    transform: translateX(0);
+  }
+}
+@keyframes headerGlow {
+  0% { box-shadow: 0 0 5px #004aad; }
+  100% { box-shadow: 0 0 20px #ffb400; }
 }
 /* PayPal Form Styles */
 form.paypal-form {
